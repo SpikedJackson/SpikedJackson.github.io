@@ -4,6 +4,10 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
  
 consoleText();
 
@@ -15,7 +19,7 @@ function consoleText() {
     var x = 1;
     var waiting = false;
     var target = document.getElementById('console-text');
-    target.setAttribute('style', 'color: #000000')
+    target.setAttribute('style', 'color:var(--secondary-color)')
     window.setInterval(function() {
         if (letterCount === 0 && waiting === false) {
             waiting = true;
@@ -24,7 +28,7 @@ function consoleText() {
                 var usedWord = words.shift();
                 words.push(usedWord);
                 x = 1;
-                target.setAttribute('style', 'color: #000000')
+                target.setAttribute('style', 'color:var(--secondary-color)')
                 letterCount += x;
                 waiting = false;
             }, 1000)
