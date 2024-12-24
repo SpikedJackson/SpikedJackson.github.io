@@ -230,6 +230,11 @@ section {
     height: 2rem;
 }
 
+body.dark-mode #socials-container img {
+    filter: invert(1);
+    transition: filter 300ms ease-in-out;
+}
+
 /* Buttons */
 .btn-container {
     display: flex;
