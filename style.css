@@ -146,7 +146,7 @@ section {
     display: flex;
 }
 
-/* PROFILE SECTION */
+/* Profile */
 
 #profile {
     display: flex;
@@ -175,15 +175,32 @@ section {
     text-align: center;
 }
 
-.section__text__p2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-}
-
 .title {
     font-size: 3rem;
     text-align: center;
 }
+
+/* Typing Text Animation */
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+    font-weight: 600;
+    font-size:1.75rem;
+    text-align:center;
+    margin-bottom: 1rem;
+}
+
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:5px;
+    color:black;
+}
+
+/* Socials */
 
 #socials-container {
     display: flex;
@@ -191,8 +208,6 @@ section {
     margin-top: 1rem;
     gap: 1rem;
 }
-  
-/* Socials */
 
 .icon {
     cursor: pointer;
@@ -212,32 +227,12 @@ section {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-    cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-    background: rgb(53, 53, 53);
+    background: rgb(55, 55, 55);
+    border: black;
     color: white;
 }
 
-.btn-color-1:hover {
-    background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+.btn:hover {
+    cursor: pointer;
+    background: black;
 }
