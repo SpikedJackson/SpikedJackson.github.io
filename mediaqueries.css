@@ -47,6 +47,9 @@
     footer {
         height: 35vh;
     }
+    footer {
+      margin-top: 5vh;
+    }
     #profile {
       height: 83vh;
       margin: 0;

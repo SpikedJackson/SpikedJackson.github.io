@@ -62,6 +62,7 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.25rem;
+    z-index: 100;
 }
 
 a {
@@ -318,6 +319,10 @@ body.dark-mode #socials-container img {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+#contact {
+    z-index:1;
 }
 
 .contact-link {
