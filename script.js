@@ -60,3 +60,17 @@ function consoleText() {
         }
     }, 400)
 }
+
+function handleScroll() {
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(section => {
+        if (section.getBoundingClientRect().top <= window.innerHeight) {
+            section.classList.add('visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScroll);
+
+handleScroll();
