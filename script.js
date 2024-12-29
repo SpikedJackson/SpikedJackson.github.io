@@ -1,3 +1,4 @@
+// mobile navigation
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -5,6 +6,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
+// dark mode
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
     const button = document.querySelector(".fixed");
@@ -14,9 +16,8 @@ function toggleDarkMode() {
         button.textContent = "Dark Mode";
     }
 }
- 
-consoleText();
 
+// typing effect
 function consoleText() {
     words = ['Developer', 'Student', 'Musician'];
     var visible = true;
@@ -61,6 +62,9 @@ function consoleText() {
     }, 400)
 }
 
+consoleText();
+
+// scrolling effect
 function handleScroll() {
     const sections = document.querySelectorAll('section');
 
