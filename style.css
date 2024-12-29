@@ -320,6 +320,15 @@ body.dark-mode #socials-container img {
     right: 10px;
 }
 
+.contact-link {
+    color:blue;
+}
+
+body.dark-mode .contact-link {
+    color:white;
+    text-decoration: underline;
+}
+
 body.dark-mode .project img {
     filter: invert(1);
     transition: filter 300ms ease-in-out;
